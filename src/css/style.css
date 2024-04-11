@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 730px;
+    background-image: url("../img/Rectangle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #44FFA1;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Manrope";
+
+}
+
+header nav img {
+    z-index: 3;
+    width: 95px;
+    height: 25px;
+    display: block;
+}
+
+.header-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+header .header-container h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+header .header-container h1 span {
+    border-bottom: 1px solid #44FFA1;
+}
+
+.header-container button {
+    margin-bottom: 2rem;
+}
+
+.header-container img {
+    width: 700px;
+}
+
+header .img-cell{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    width: 800px;
+   
+}
+
+header .header-img1 {
+    position: absolute;
+    left:0;
+    top: 15%;
+}
+
+header .header-img2 {
+    position: absolute;
+    right: -2%;
+    top: 45%;
+}
+
+.btn-green {
+    background-color: #44FFA1;
+    color: #24053E;
+    padding: 0.7rem 1.5rem;
+    border: none;
+}
+
+.three-circles{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #24053E;
+    margin-bottom: 10rem;
+}
+
+.three-circles .circle-item{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.circle-item .circle-description h1{
+   margin-bottom: 0.5rem;
+   margin-top: 0.5rem;
+}
+.circle-item .circle-description p{
+    max-width: 300px;
+}
+
+.three-circles .circle-item .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.info{
+    position: relative;
+}
+
+.info-img img{
+    width: 477px;
+    margin-left: 20rem;
+}
+
+.info-description{
+    position: absolute;
+    width: 450px;
+    height: auto;
+    padding: 5rem;
+    background-color: #24053E;
+    color: white;
+    top: 40%;
+    left: 45%;
+}
+
+.info-description h1{
+    font-size: 1.8rem;
+}
+
+.info-description p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-description img{
+    position: absolute;
+    left: 55%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+footer .logo{
+    margin-bottom: 2.5rem;
+}
+
+footer .icons{
+    margin-bottom: 2rem;
+}
+
+footer .icons img:not(:last-child){
+    margin-right: 0.8rem;
+}
