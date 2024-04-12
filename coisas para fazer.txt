@@ -1,0 +1,5 @@
+ajeitar as fontes de todos os textos a partir do figma
+
+fazer a parte responsiva para tablet
+
+fazer a parte responsiva para android mobile

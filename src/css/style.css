@@ -6,10 +6,6 @@
     margin: 0;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 header {
     position: relative;
@@ -66,21 +62,18 @@ header .header-container h1 span {
     margin-bottom: 2rem;
 }
 
-.header-container img {
-    width: 700px;
-}
 
-header .img-cell{
+header .img-cell {
     position: absolute;
     left: 30%;
     top: 50%;
     width: 800px;
-   
+
 }
 
 header .header-img1 {
     position: absolute;
-    left:0;
+    left: 0;
     top: 15%;
 }
 
@@ -90,6 +83,11 @@ header .header-img2 {
     top: 45%;
 }
 
+header .header-img3{
+    position: absolute;
+    display: none;
+}
+
 .btn-green {
     background-color: #44FFA1;
     color: #24053E;
@@ -97,7 +95,7 @@ header .header-img2 {
     border: none;
 }
 
-.three-circles{
+.three-circles {
     margin-top: 7rem;
     display: flex;
     justify-content: center;
@@ -106,7 +104,7 @@ header .header-img2 {
     margin-bottom: 10rem;
 }
 
-.three-circles .circle-item{
+.three-circles .circle-item {
     max-width: 300px;
     display: flex;
     justify-content: center;
@@ -115,15 +113,16 @@ header .header-img2 {
     text-align: center;
 }
 
-.circle-item .circle-description h1{
-   margin-bottom: 0.5rem;
-   margin-top: 0.5rem;
+.circle-item .circle-description h1 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
-.circle-item .circle-description p{
+
+.circle-item .circle-description p {
     max-width: 300px;
 }
 
-.three-circles .circle-item .circle{
+.three-circles .circle-item .circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,16 +132,16 @@ header .header-img2 {
     border-radius: 50%;
 }
 
-.info{
+.info {
     position: relative;
 }
 
-.info-img img{
+.info-img img {
     width: 477px;
     margin-left: 20rem;
 }
 
-.info-description{
+.info-description {
     position: absolute;
     width: 450px;
     height: auto;
@@ -153,7 +152,7 @@ header .header-img2 {
     left: 45%;
 }
 
-.info-description h1{
+.info-description h1 {
     font-size: 1.8rem;
 }
 
@@ -162,12 +161,12 @@ header .header-img2 {
     margin-bottom: 1.5rem;
 }
 
-.info-description img{
+.info-description img {
     position: absolute;
     left: 55%;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,14 +174,112 @@ footer{
     margin-top: 7rem;
 }
 
-footer .logo{
+footer .logo {
     margin-bottom: 2.5rem;
 }
 
-footer .icons{
+footer .icons {
     margin-bottom: 2rem;
 }
 
-footer .icons img:not(:last-child){
+footer .icons img:not(:last-child) {
     margin-right: 0.8rem;
+}
+
+/* media para n ficar ruim quando diminuir para o tablet */
+
+@media screen and (max-width: 1270px) {
+    .header-img2 {
+        display: none;
+    }
+
+    .header-img1 {
+        display: none;
+    }
+
+    header .header-container h1 {
+        margin-bottom: 3rem;
+        margin-top: 5rem;
+    }
+
+    header .img-cell {
+        width: 650px;
+        top: 60%;
+    }
+}
+
+/* media para o tablet */
+@media screen and (max-width: 1024px) {
+
+
+
+    header .header-container h1 {
+        margin-bottom: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    header .header-img1 {
+        display: none;
+    }
+
+    header .header-img2 {
+        display: block;
+        top: 35%;
+        right: -9%;
+
+    }
+
+    header .header-img3{
+        display: block;
+        top: 10%;
+    }
+
+
+    header .img-cell {
+        width: 600px;
+        left: 25%;
+        top: 60%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    .header-container{
+        max-width: 350px;
+    }
+
+
+    header .header-container h1 {
+        margin-bottom: 2.5rem;
+        margin-top: 6rem;
+    }
+
+
+    header .header-img1 {
+        display: none;
+    }
+
+    header .header-img2 {
+        display: none;
+        
+
+    }
+
+    header .header-img3{
+        display: none;
+    }
+
+
+    header .img-cell{
+        width: 400px;
+        left: 5%;
+        top: 80%;
+
+
+    }
+
 }
