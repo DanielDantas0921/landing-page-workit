@@ -33,6 +33,13 @@ header nav a {
 
 }
 
+header nav a:hover{
+    color: #44FFA1;
+}
+
+
+
+
 header nav img {
     z-index: 3;
     width: 95px;
@@ -52,6 +59,7 @@ header .header-container h1 {
     margin-bottom: 1.5rem;
     font-size: 4rem;
     text-align: center;
+    font-family: "Fraunces";
 }
 
 header .header-container h1 span {
@@ -60,7 +68,10 @@ header .header-container h1 span {
 
 .header-container button {
     margin-bottom: 2rem;
+    font-family: "Manrope";
 }
+
+
 
 
 header .img-cell {
@@ -95,8 +106,14 @@ header .header-img3{
     border: none;
 }
 
+.btn-green:hover{
+    background-color: transparent;
+    border: 1px solid #44FFA1 ;
+    color: #44FFA1;
+}
+
 .three-circles {
-    margin-top: 7rem;
+    margin-top: 13rem;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -116,10 +133,12 @@ header .header-img3{
 .circle-item .circle-description h1 {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+    font-family: "Fraunces";
 }
 
 .circle-item .circle-description p {
     max-width: 300px;
+    font-family: "Manrope";
 }
 
 .three-circles .circle-item .circle {
@@ -154,11 +173,16 @@ header .header-img3{
 
 .info-description h1 {
     font-size: 1.8rem;
+    font-family: "Fraunces";
 }
 
 .info-description p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    font-family: "Manrope";
+}
+.info-description button{
+    font-family: "Manrope";
 }
 
 .info-description img {
@@ -206,6 +230,16 @@ footer .icons img:not(:last-child) {
         width: 650px;
         top: 60%;
     }
+
+    .three-circles{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .three-circles .circle-item{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 /* media para o tablet */
@@ -241,9 +275,49 @@ footer .icons img:not(:last-child) {
         top: 60%;
     }
 
+    .three-circles{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .three-circles .circle-item{
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        text-align: left;
+    }
+
+    .circle-item .circle{
+        margin-right: 2rem;
+    }
 
 
+    .circle-item .circle-description h1{
+        margin-bottom: 1.5rem;
+    }
 
+    .circle-item .circle-description p{
+        max-width: 700px;
+    }
+
+
+    .info-img img{
+        width: 281px;
+        margin-left: 4rem;
+    }
+
+    .info-description{
+        top:58%;
+        left: 23%;
+    }
+
+    footer{
+        margin-top: 20rem;
+    }
+
+    footer .icons img:not(:last-child) {
+        margin-right: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -279,6 +353,33 @@ footer .icons img:not(:last-child) {
         left: 5%;
         top: 80%;
 
+
+    }
+
+    .three-circles .circle-item{
+        flex-direction: column;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .circle-item .circle{
+        margin-bottom: 2rem;
+    }
+
+    .circle-item .circle:not(first-child){
+        margin-top: 1.5rem;
+    }
+
+    .info-img img{
+        margin-left: 17%;
+    }
+
+    .info-description{
+        top: 83%;
+        left: 2%;
+        width: 300px;
+        padding: 3rem;
+        text-align: center;
 
     }
 
