@@ -61,7 +61,7 @@ header nav img {
 header .header-container h1 {
     color: white;
     margin-bottom: 1.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     font-family: "Fraunces";
 }
@@ -199,7 +199,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 10rem;
 }
 
 footer .logo {
@@ -239,6 +239,17 @@ footer .icons img:not(:last-child) {
     .three-circles .circle-item{
         display: flex;
         flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .info-img img{
+        margin-left: 7rem;
+    }
+
+    .info-description{
+        top: 56%;
+        left: 36%;
     }
 }
 
@@ -419,6 +430,11 @@ footer .icons img:not(:last-child) {
 
 
 @media screen and (max-width: 470px){
+
+    header nav{
+        padding: 0.5rem 1rem;
+    }
+
 
     .img-cell{
         width: 80%;
